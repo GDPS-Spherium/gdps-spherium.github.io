@@ -1,1 +1,0 @@
-# gdps-spherium.github.io
