@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <title>
+            Главная
+        </title>
+        <link rel="icon" href="favicon.ico" />
+        <link rel="stylesheet" href="style.css">
+        <meta property="og:title" content="Главная" />
+        <meta property="og:description" content="Инфа о приватке, ссылки и т. д." />
+        <meta property="og:image" content="URL изображения для превью" />
+        <meta property="og:url" content="https://www.gdps-spherium.ru" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="GDPS Spherium" />
+    </head>
+    <body>
+        <div id="preloader" style="vertical-align: middle;">
+            <!-- <button class="top-title" id="preloader-button" style="vertical-align: middle;">GDPS Spherium</button> -->
+            <img src="assets/logo.png" alt="logo" style="width: 100px; vertical-align: middle;">
+            <p style="color: #333333;">Входим на сайт...</p>
+          </div>
+          <div class="backgroundGradient">
+            <div class="bgCircle bgCircle1"></div>
+            <div class="bgCircle bgCircle2"></div>
+            <div class="bgCircle bgCircle3"></div>
+            <div class="bgCircle bgCircle4"></div>
+            <div class="bgCircle bgCircle5"></div>
+        </div>
+        <div>
+            <a href="index"><button class="top-title" style="font-size: 45px;">GDPS Spherium</button></a>
+            <!-- <img src="assets/logo.png" alt="Site logo" width="60px"> -->
+        </div>
+        <div class="navbar">
+            <!-- <a href="index"><button class="top-title" style="padding: 4px; font-size: 25px; margin-right: 30px; margin-top: 0px;">GDPS Spherium</button></a> -->
+              <a><button class="navbar-button-this">главная</button></a>
+              <a href="projects.html"><button class="navbar-button">скачать</button></a>
+              <a href="prikols.html"><button class="navbar-button">панель</button></a>
+              <a href="social.html"><button class="navbar-button">листы</button></a>
+              <a href="site.html"><button class="navbar-button">гайды</button></a>
+        </div>
+        <div class="home-page">
+          <p class="home-page-title" style="text-align: center; display: inline; margin-right: 0; font-size: 45px;">привет, мы рады тебя видеть на <p class="home-page-title-gdps" style="display: inline; margin-left: 0; font-size: 45px; background: gradient(to top, #f00057 , #ff00e1)">gdps spherium</p></p>
+          <p class="home-page-title" style="text-align: center; margin-left: 0; font-size: 20px; color: #b6b6b6;">мы ещё не слишком крутые, но улучшаемся постоянно</p>
+          <!-- <p class="content-text">Звать меня Кемпером или Ваней. Мини ютубер на мини аудиторию. На данный момент 6К+ подписчиков на YouTube, планирую двигаться дальше. Пока что покинул часть интернета в которую входит недоразработка плагинов Minecraft, недоприложения ну и собственно канал на ютубчике.</p> -->
+        </div>
+        <button id="download-btn" class="server-stats__button">
+          Скачать <span class="icon">⬇️</span>
+        </button>
+        <a href="changelog" class="content-text" style="font-size: 15px; text-decoration: none;">посмотреть changelog</a>        
+        <div class="server-stats">
+          <div class="server-stats__header">Статистика сервера</div>
+          <div class="server-stats__row">
+            <div class="server-stats__item">
+              <span class="icon"><img src="assets/users.svg" style="width: 25px;"></span>
+              <span id="users-total">--</span>
+            </div>
+            <div class="server-stats__item">
+              <span class="icon"><img src="assets/levels.svg" style="width: 25px;"></span>
+              <span id="levels-total">--</span>
+            </div>
+          </div>
+        </div>
+        <div style="height: 250px;"></div>
+        <div class="content" style="margin-top: 100px;">
+          <p class="content-title">фичи приватки</p>
+        </div>
+          <script>
+            window.addEventListener('load', () => {
+              setTimeout(() => {
+                const preloader = document.getElementById('preloader');
+                preloader.classList.add('hidden');
+          
+                setTimeout(() => {
+                  preloader.style.display = 'none';
+                  document.getElementById('content').style.display = 'block';
+                }, 1000);
+              }, 1000);
+            });
+          </script>
+          <script src="stats.js"></script>
+          <script src="downloader.js"></script>
+    </body>
+</html>
